@@ -96,3 +96,30 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+## MCP Implementation
+
+## Security Configuration
+
+### Environment Variables
+
+1. Copy `.env.example` to `.env`
+2. Update the values in `.env` with your actual configuration
+3. Never commit the `.env` file to version control
+
+### Security Best Practices
+
+1. Keep all dependencies up to date with `npm update`
+2. Use environment variables for sensitive configuration
+3. Follow the principle of least privilege when setting up database users
+4. Enable CORS only for trusted origins
+5. Use strong passwords and API keys
+6. Regularly audit dependencies with `npm audit`
+
+### API Security
+
+- All API endpoints should be properly authenticated
+- Use HTTPS in production
+- Implement rate limiting for API endpoints
+- Validate all input data
+- Implement proper error handling without exposing sensitive details
